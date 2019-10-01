@@ -29,31 +29,28 @@ At a high level, computers do four things:
 -   interact with us
 
 
-Computers can interact with us in many different ways,
-such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems.
-While touch and voice interfaces are becoming more commonplace, most interaction is still
-done using traditional screens, mice, touchpads and keyboards.
-
-The **graphical user interface** (GUI) is the most widely used way to interact with
-personal computers. We give instructions (to run a program, to copy a file, to create
-a new folder/directory) with the convenience of a few mouse clicks. This way of interacting
-with a computer is intuitive and very easy to learn. But this way of giving instructions to
-a computer scales very poorly if we are to give a large stream of instructions even if they
-are similar or identical. For example if we have to copy the third line of each of a thousand
-text files stored in a thousand different directories and paste it into a single file
-line by line. Using the traditional GUI approach of clicks will take several hours to do this.
-
-This is where we take advange of the shell - a **command-line interface**
-to make such repetitive tasks automatic and fast. It can take a single instruction and
-repeat it as is or with some modification as many times as we want. The task in
-the example above can be accomplished in a few minutes at most.
-
-The heart of a command-line interface is a **read-evaluate-print loop** (REPL). It is called
-so because when you type a command and press <kbd>Return</kbd> (also known as <kbd>Enter</kbd>) the shell
-reads your command,
-evaluates (or 'executes') it,
-prints the output of your command,
-loops back and waits for you to enter another command.
+-   Computers can interact with us in many different ways:
+    -   keyboard and mouse
+    -   touch screen
+    -   speech recognition
+-   Traditional screen, mouse/touchpad, and keyboards are still dominant.
+-   Within that mode, the **graphical user interface** (GUI) is the most widely used way to 
+    interact with personal computers. 
+    -   We give instructions (to run a program, to copy a file, to create a new folder/directory) with 
+        the convenience of a few mouse clicks. 
+    -   intuitive and easy to learn
+    -   scales very poorly for a large stream of systematic instructions. Ex: copy the third line
+        from each of 1000 text files into a single file; this will take hours.
+-   The shell - a **command-line interface** makes such repetitive tasks automatic and fast. 
+    -   Take a single instruction and repeat it as is or with some modification as many times as we want. 
+    -   The task in the example above can be accomplished in a few minutes at most.
+-   The heart of a command-line interface is a **read-evaluate-print loop** (REPL). 
+    It is called so because when you type a command and press <kbd>Return</kbd> (also known as
+    <kbd>Enter</kbd>) the shell:
+    1   reads your command,
+    2   evaluates (or 'executes') it,
+    3   prints the output of your command,
+    4   loops back and waits for you to enter another command.
 
 ### The Shell
 
