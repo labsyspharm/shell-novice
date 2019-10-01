@@ -47,37 +47,38 @@ At a high level, computers do four things:
 -   The heart of a command-line interface is a **read-evaluate-print loop** (REPL). 
     It is called so because when you type a command and press <kbd>Return</kbd> (also known as
     <kbd>Enter</kbd>) the shell:
-    1.  reads your command,
-    2.  evaluates (or 'executes') it,
-    3.  prints the output of your command,
-    4.  loops back and waits for you to enter another command.
+    1.  <kbd>R</kbd>eads your command,
+    2.  <kbd>E</kbd>valuates (or 'executes') it,
+    3.  <kbd>P</kbd>rints the output of your command,
+    4.  <kbd>L</kbd>oops back and waits for you to enter another command.
+
 
 ### The Shell
 
+-   A Shell is a program which runs other programs rather than doing calculations itself.
+-   It is just a "shell", in the sense of a snail, itself lifeless, but serving as a container
+    for the real meat of the animal.
+-   Those programs can be as complicated as climate modeling software and as simple as a
+    program that creates a new directory.
+-   The simple programs which are used to perform stand alone tasks are usually refered
+    to as commands.
+-   The most popular Unix shell is Bash
+    -   The Bourne Again SHell --- so-called because it's derived from a 
+        shell written by Stephen Bourne.
+-   Bash is the default shell on most versions of Unix and in most packages
+    that provide Unix-like tools for Windows.
 
-The Shell is a program which runs other programs rather than doing calculations itself.
-Those programs can be as complicated as climate modeling software and as simple as a
-program that creates a new directory. The simple programs which are used to perform
-stand alone tasks are usually refered to as commands.
-The most popular Unix shell is Bash, (the Bourne Again SHell --- so-called because
-it's derived from a shell written by Stephen Bourne).
-Bash is the default shell on most modern implementations of Unix
-and in most packages that provide Unix-like tools for Windows.
-
-
-When the shell is first opened, you are presented with a **prompt**,
-indicating that the shell is waiting for input.
+-   When the shell is first opened, you are presented with a **prompt**,
+    indicating that the shell is waiting for input.
 
 ~~~
 $
 ~~~
 {: .language-bash}
 
-The shell typically uses `$ ` as the prompt, but may use a different symbol.
-In the examples for this lesson, we'll show the prompt as `$ `.
-Most importantly:
-when typing commands, either from these lessons or from other sources,
-*do not type the prompt*, only the commands that follow it.
+-   The shell typically uses `$ ` as the prompt, but may use a different symbol.
+    We'll always show the prompt as `$ `.
+-   <kbd>Importantly</kbd>: when typing commands, *do NOT type the prompt*, only the commands that follow it.
 
 So let's try our first command, which will list the contents of the current directory:
 
@@ -110,28 +111,33 @@ Documents   Library     Music       Public
 
 ### Is it difficult?
 
-It is a different model of interacting than a GUI, and that
-will take some effort - and some time - to learn. A GUI
-presents you with choices and you select one. With a **command line interface** (CLI) the choices are combinations
-of commands and parameters, more like words in a language than buttons on a screen. They
-are not presented to you so
-you must learn a few, like learning some vocabulary in a new language. But a small
-number of commands gets you a long way, and we'll cover those essential few today.
+-   It is a different model of interacting than a GUI; it will take time and effort to learn.
+-   A GUI presents you with choices and you select one. 
+-   With a **command line interface** (CLI) the choices are combinations of commands and parameters
+    -    more like words in a language than buttons on a screen. 
+-   The optins are not simply presented to you so you must learn a bit
+    -   like learning some vocabulary in a new language. 
+-   A small number of commands gets you a long way
+-   We'll cover those essential few today.
 
 ### Flexibility and automation
 
-The grammar of a shell allows you to combine existing tools into powerful
-pipelines and handle large volumes of data automatically. Sequences of
-commands can be written into a *script*, improving the reproducibility of
-workflows and allowing you to repeat them easily.
+-   The grammar of a shell allows you to combine existing tools into powerful
+    pipelines and handle large workloads automatically
+-   Sequences of commands can be written into a *script*
+    -   improving reproducibility,
+    -   and repeatability
 
-In addition, the command line is often the easiest way to interact with remote machines and supercomputers.
-Familiarity with the shell is near essential to run a variety of specialized tools and resources
-including high-performance computing systems.
-As clusters and cloud computing systems become more popular for scientific data crunching,
-being able to interact with the shell is becoming a necessary skill.
-We can build on the command-line skills covered here
-to tackle a wide range of scientific questions and computational challenges.
+-   The command line is often the easiest way to interact with remote machines:
+    -   supercomputers
+    -   cloud computing
+-   The shell is near essential to run many specialized tools:
+    -   high-performance computational models.
+    -   customizable data pipelines
+-   As clusters and cloud computing systems are becoming common, so the shell 
+    is becoming a necessary skill.
+-   We can build on the command-line skills covered here to tackle a wide range of scientific
+    questions and computational challenges.
 
 ## Nelle's Pipeline: A Typical Problem
 
@@ -166,9 +172,8 @@ the chances of her selecting all of those files correctly are practically zero.
 Missing that paper deadline is looking increasingly likely.
 
 The next few lessons will explore what she should do instead.
-More specifically,
-they explain how she can use a command shell to run the `goostats` program,
-using loops to automate the repetitive steps e.g. entering file names,
+More specifically, they explain how she can use a command shell to run the `goostats` 
+program, using loops to automate the repetitive steps e.g. entering file names,
 so that her computer can work 24 hours a day while she writes her paper.
 
 As a bonus,
