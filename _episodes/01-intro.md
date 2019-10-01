@@ -21,14 +21,12 @@ automating repetitive tasks, and its capacity to access networked machines."
 cryptic its commands and operation can be."
 ---
 ### Background
-At a high level, computers do four things:
+-   At a high level, computers do four things:
 
--   run programs
--   store data
--   communicate with each other, and
--   interact with us
-
-
+    -   run programs
+    -   store data
+    -   communicate with each other, and
+    -   interact with us
 -   Computers can interact with us in many different ways:
     -   keyboard and mouse
     -   touch screen
