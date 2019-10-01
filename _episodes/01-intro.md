@@ -47,10 +47,10 @@ At a high level, computers do four things:
 -   The heart of a command-line interface is a **read-evaluate-print loop** (REPL). 
     It is called so because when you type a command and press <kbd>Return</kbd> (also known as
     <kbd>Enter</kbd>) the shell:
-    1   reads your command,
-    2   evaluates (or 'executes') it,
-    3   prints the output of your command,
-    4   loops back and waits for you to enter another command.
+    1.  reads your command,
+    2.  evaluates (or 'executes') it,
+    3.  prints the output of your command,
+    4.  loops back and waits for you to enter another command.
 
 ### The Shell
 
