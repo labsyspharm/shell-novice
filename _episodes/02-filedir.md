@@ -366,10 +366,11 @@ or available locally via: info '(coreutils) ls invocation'
 ### The `man` command
 
 -   The other way to learn about `ls` is to type
+
 ~~~
 $ man ls
 ~~~
-{: .bash}
+{: .language-bash}
 
 -   This will turn your terminal into a page with:
     -    a description of the `ls` command
