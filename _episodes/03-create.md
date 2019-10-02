@@ -124,22 +124,28 @@ then run a text editor called Nano to create a file called `draft.txt`:
 
 ~~~
 $ cd thesis
-$ nano draft.txt
+$ atom draft.txt
 ~~~
 {: .language-bash}
 
 > ## Which Editor?
 >
-> When we say, '`nano` is a text editor'" we really do mean 'text': it can
-> only work with plain character data, not tables, images, or any other
-> human-friendly media. We use it in examples because it is one of the
-> least complex text editors. However, because of this trait, it may
-> not be powerful enough or flexible enough for the work you need to do
-> after this workshop. On Unix systems (such as Linux and Mac OS X),
+> When we say, '`atom` is a text editor'" we really do mean 'text': it is
+> designed to work with plain character data, not tables, images. We use it
+> in examples because it is one of the easiest to use, yet sophisticated 
+> text editors. It should be powerful and flexible enough for the work you 
+> need to do after this workshop. It is however GUI based, which means you
+> need to be able to pop up a window, which is not possible when, for example,
+> you are accessing a remote server.
+>
+> On Unix systems (such as Linux and Mac OS X),
 > many programmers use [Emacs](http://www.gnu.org/software/emacs/) or
 > [Vim](http://www.vim.org/) (both of which require more time to learn),
-> or a graphical editor such as
-> [Gedit](http://projects.gnome.org/gedit/). On Windows, you may wish to
+> as terminal-only editors. `nano` is another common, and easier-to-use option,
+> though far less powerful.
+> 
+> Some other common GUIs include [Gedit](http://projects.gnome.org/gedit/) on 
+> Unix systems. On Windows, you may wish to
 > use [Notepad++](http://notepad-plus-plus.org/).  Windows also has a built-in
 > editor called `notepad` that can be run from the command line in the same
 > way as `nano` for the purposes of this lesson.
@@ -152,16 +158,7 @@ $ nano draft.txt
 > another directory the first time you 'Save As...'
 {: .callout}
 
-Let's type in a few lines of text.
-Once we're happy with our text, we can press <kbd>Ctrl</kbd>+<kbd>O</kbd> (press the Ctrl or Control key and, while
-holding it down, press the O key) to write our data to disk
-(we'll be asked what file we want to save this to:
-press <kbd>Return</kbd> to accept the suggested default of `draft.txt`).
-
-<div style="width:80%; margin: auto;"><img alt="Nano in Action" src="../fig/nano-screenshot.png"></div>
-
-Once our file is saved, we can use `Ctrl-X` to quit the editor and
-return to the shell.
+Let's type in a few lines of text. You can then save the file by typing Ctrl-S.
 
 > ## Control, Ctrl, or ^ Key
 >
@@ -182,7 +179,7 @@ return to the shell.
 > file.
 {: .callout}
 
-`nano` doesn't leave any output on the screen after it exits,
+`atom` doesn't leave any output on the screen after it exits,
 but `ls` now shows that we have created a file called `draft.txt`:
 
 ~~~
@@ -197,7 +194,7 @@ draft.txt
 
 > ## Creating Files a Different Way
 >
-> We have seen how to create text files using the `nano` editor.
+> We have seen how to create text files using the `atom` editor.
 > Now, try the following command:
 >
 > ~~~
