@@ -31,13 +31,12 @@ become our shell script:
 
 ~~~
 $ cd molecules
-$ nano middle.sh
+$ atom middle.sh
 ~~~
 {: .language-bash}
 
-The command `nano middle.sh` opens the file `middle.sh` within the text editor 'nano'
-(which runs within the shell).
-If the file does not exist, it will be created.
+The command `atom middle.sh` opens the file `middle.sh` within the text editor 'atom'
+If the file does not exist, it will be created when we save it.
 We can use the text editor to directly edit the file -- we'll simply insert the following line:
 
 ~~~
@@ -50,12 +49,10 @@ it selects lines 11-15 of the file `octane.pdb`.
 Remember, we are *not* running it as a command just yet:
 we are putting the commands in a file.
 
-Then we save the file (`Ctrl-O` in nano),
- and exit the text editor (`Ctrl-X` in nano).
+Then we save the file (`Ctrl-S` in atom),
 Check that the directory `molecules` now contains a file called `middle.sh`.
 
-Once we have saved the file,
-we can ask the shell to execute the commands it contains.
+Once we have saved the file, we can ask the shell to execute the commands it contains.
 Our shell is called `bash`, so we run the following command:
 
 ~~~
@@ -72,8 +69,7 @@ ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
 ~~~
 {: .output}
 
-Sure enough,
-our script's output is exactly what we would get if we ran that pipeline directly.
+Sure enough, our script's output is exactly what we would get if we ran that pipeline directly.
 
 > ## Text vs. Whatever
 >
@@ -94,20 +90,14 @@ but that would probably take longer than typing the command out again
 in the shell and executing it with a new file name.
 Instead, let's edit `middle.sh` and make it more versatile:
 
-~~~
-$ nano middle.sh
-~~~
-{: .language-bash}
-
-Now, within "nano", replace the text `octane.pdb` with the special variable called `$1`:
+Replace the text `octane.pdb` with the special variable called `$1`, and save it:
 
 ~~~
 head -n 15 "$1" | tail -n 5
 ~~~
 {: .output}
 
-Inside a shell script,
-`$1` means 'the first filename (or other argument) on the command line'.
+Inside a shell script, `$1` means 'the first filename (or other argument) on the command line'.
 We can now run our script like this:
 
 ~~~
@@ -149,20 +139,16 @@ ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
 
 We still need to edit `middle.sh` each time we want to adjust the range of lines,
 though.
+
 Let's fix that by using the special variables `$2` and `$3` for the
 number of lines to be passed to `head` and `tail` respectively:
-
-~~~
-$ nano middle.sh
-~~~
-{: .language-bash}
 
 ~~~
 head -n "$2" "$1" | tail -n "$3"
 ~~~
 {: .output}
 
-We can now run:
+(Remember to save the file) We can now run:
 
 ~~~
 $ bash middle.sh pentane.pdb 15 5
@@ -198,11 +184,6 @@ TER      18              1
 This works,
 but it may take the next person who reads `middle.sh` a moment to figure out what it does.
 We can improve our script by adding some **comments** at the top:
-
-~~~
-$ nano middle.sh
-~~~
-{: .language-bash}
 
 ~~~
 # Select lines from the middle of a file.
@@ -244,7 +225,7 @@ to handle the case of arguments containing spaces
 Here's an example:
 
 ~~~
-$ nano sorted.sh
+$ atom sorted.sh
 ~~~
 {: .language-bash}
 
