@@ -47,6 +47,7 @@ keypoints:
         so knowing where you are before running a command is important. 
 
 -   `pwd` shows you where you are:
+
 ~~~
 $ pwd
 ~~~
