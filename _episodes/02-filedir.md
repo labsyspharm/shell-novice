@@ -471,6 +471,7 @@ data-shell/
     can do two things:
     -   First, we can look at its contents, using the same strategy as before, passing
         a directory name to `ls`:
+
 ~~~
 $ ls -F Desktop/data-shell
 ~~~
@@ -628,6 +629,7 @@ $ ls -F -a
  -  Let's explore some variations on those commands: 
     -   What happens if you type `cd` on its own, without giving
         a directory?
+
 ~~~
 $ cd
 ~~~
